@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MyBinding">
+        <variable
+            name="mine"
+            type="com.zy.usercenter.view.LoginActivity" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:text="@={mine.pageDataSource.username}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入电话号码"></EditText>
+        <EditText
+            android:text="@={mine.pageDataSource.pwd}"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入密码"></EditText>
+        <Button
+            android:onClick="@{(view)->mine.login(view,mine.pageDataSource)}"
+            android:text="登录"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Button>
+    </LinearLayout>
+
+</layout>

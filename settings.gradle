@@ -1,0 +1,6 @@
+include ':Common'
+include ':Net'
+include ':Resource'
+include ':UserCenter'
+include ':app'
+rootProject.name = "NewsZG61901"
