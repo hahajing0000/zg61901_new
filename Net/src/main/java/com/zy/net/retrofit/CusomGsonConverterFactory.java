@@ -28,7 +28,7 @@ public class CusomGsonConverterFactory extends Converter.Factory {
 
     @Override
     public Converter<ResponseBody, ?> responseBodyConverter(Type type, Annotation[] annotations, Retrofit retrofit) {
-        return new CustomResponseBodyConverter<>();
+        return new CustomResponseBodyConverter<>(type);
     }
 
     @Override

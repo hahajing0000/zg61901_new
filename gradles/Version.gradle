@@ -22,6 +22,11 @@ ext{
             smart : "2.0.1",
             arouter: "1.5.0",
             aroutercompiler:"1.2.2",
-            chart:"v3.1.0"
+            chart:"v3.1.0",
+
+            ownlibversion:"1.1.11",
+
+            recyclerview:"1.1.0",
+            glideVersion:"4.9.0"
     ]
 }

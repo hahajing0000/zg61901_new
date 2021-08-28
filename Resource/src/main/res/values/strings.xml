@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">NewsZG61901</string>
+    <string name="home_bottom_home">Home</string>
+    <string name="home_bottom_video">Video</string>
+    <string name="home_bottom_hotline">Hotline</string>
+    <string name="home_bottom_Mine">Mine</string>
+
+    <string name="usercenter_noaccout">no user?register now</string>
+    <string name="usercenter_userpwderror">username or password is wrong!</string>
+    <string name="usercenter_register_inputusername">please input username</string>
+    <string name="usercenter_register_inputpassword">please input password</string>
+    <string name="usercenter_register_inputpasswordagain">please input password again</string>
+    <string name="usercenter_register_register">Register</string>
+    <string name="usercenter_register_usernameexists">username is exists</string>
+    <string name="usercenter_register_success">Register Success</string>
+    <string name="usercenter_register_failed">Register Failed</string>
+    <string name="usercenter_register_twoinputpwdisnotsame">Two input password is not same</string>
+    <string name="usercenter_register_databindfailed">Databind Failed</string>
+
 </resources>

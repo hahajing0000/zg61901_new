@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.zy.usercenter.viewmodel.UserCenterViewModel" />
+        <variable
+            name="mine"
+            type="com.zy.usercenter.view.RegisterActivity" />
+    </data>
+    <LinearLayout
+        android:orientation="vertical"
+        style="@style/root_layout_style">
+        <EditText
+            android:hint="@string/usercenter_register_inputusername"
+            android:text="@={viewmodel.dataSource.username}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></EditText>
+        <EditText
+            android:text="@={viewmodel.dataSource.pwd}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usercenter_register_inputpassword"></EditText>
+        <EditText
+            android:text="@={viewmodel.dataSource.pwd2}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/usercenter_register_inputpasswordagain"></EditText>
+        <Button
+            android:onClick="@{(view)->mine.onRegisterClick(view)}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usercenter_register_register"></Button>
+    </LinearLayout>
+</layout>

@@ -210,8 +210,8 @@ public class RetrofitFactory {
      * @author zhangyue
      * @time 2021/8/17 13:46
      */ 
-    public <T> T create(Class<?> service){
-        return (T) retrofit.create(service);
+    public <T> T create(Class<T> service){
+        return retrofit.create(service);
     }
 
 }

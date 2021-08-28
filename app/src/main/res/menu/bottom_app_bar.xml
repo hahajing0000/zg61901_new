@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bottom_item_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home_bottom_home"
+        android:contentDescription="@string/home_bottom_home"
+        />
+
+    <item
+        android:id="@+id/bottom_item_video"
+        android:icon="@drawable/ic_video"
+        android:title="@string/home_bottom_video"
+        android:contentDescription="@string/home_bottom_video"
+        />
+
+    <item
+        android:id="@+id/bottom_item_hotline"
+        android:icon="@drawable/ic_hotline"
+        android:title="@string/home_bottom_hotline"
+        android:contentDescription="@string/home_bottom_hotline"
+        />
+
+    <item
+        android:id="@+id/bottom_item_mine"
+        android:icon="@drawable/ic_mine"
+        android:title="@string/home_bottom_Mine"
+        android:contentDescription="@string/home_bottom_Mine"
+        />
+</menu>

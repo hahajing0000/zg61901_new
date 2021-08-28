@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <data>
+        <variable
+            name="datasource"
+            type="com.zy.home.viewmodel.NewsViewModel" />
+        <variable
+            name="own"
+            type="com.zy.home.view.HomeFragment" />
+    </data>
+
+    <LinearLayout
+        style="@style/root_layout_style">
+        <com.zy.home.common.recyclerview.BindingRecyclerView
+            adapter="@{own.adapter}"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.zy.home.common.recyclerview.BindingRecyclerView>
+    </LinearLayout>
+</layout>

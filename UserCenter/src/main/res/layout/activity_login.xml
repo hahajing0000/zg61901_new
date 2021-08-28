@@ -10,8 +10,7 @@
     </data>
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        style="@style/root_layout_style">
         <EditText
             android:text="@={mine.pageDataSource.username}"
             android:layout_width="match_parent"
@@ -23,6 +22,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="请输入密码"></EditText>
+        <TextView
+            spanText="@{@string/usercenter_noaccout}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></TextView>
         <Button
             android:onClick="@{(view)->mine.login(view,mine.pageDataSource)}"
             android:text="登录"

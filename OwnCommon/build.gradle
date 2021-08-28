@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+def libs=rootProject.ext.dependencies
+def version=rootProject.ext.dependenciesVersion
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    api libs.retrofit
+    api libs.rxandroid
+    api libs.rxjava
+    api libs.gson
+    api libs.mvvmcore
+    api libs.common
+
+    api libs.arouter
+
+    api libs.recyclerview
+
+    api "com.github.bumptech.glide:glide:$version.glideVersion"
+//    annotationProcessor 'androidx.annotation:annotation:1.1.0' // 必须添加，防止android.support.annotation找不到
+
+    api "com.github.bumptech.glide:okhttp3-integration:$version.glideVersion"
+
+}

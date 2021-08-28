@@ -1,5 +1,7 @@
 package com.zy.net.protocol;
 
+import java.util.LinkedHashMap;
+
 /**
  * @ProjectName: NewsZG61901
  * @Package: com.zy.net.protocol
@@ -32,6 +34,9 @@ public class BaseRespEntity<T> {
     }
 
     public T getData() {
+        if (data.getClass()== LinkedHashMap.class){
+
+        }
         return data;
     }
 
@@ -45,5 +50,14 @@ public class BaseRespEntity<T> {
 
     public void setMsg(String msg) {
         this.msg = msg;
+    }
+
+    @Override
+    public String toString() {
+        return "BaseRespEntity{" +
+                "code=" + code +
+                ", data=" + data +
+                ", msg='" + msg + '\'' +
+                '}';
     }
 }
